@@ -1,0 +1,67 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 760px;
+    }
+    .footitems {
+        font-size: 12px;
+    }
+    .bl2text {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .title {
+        flex-flow:column-reverse;
+        justify-content: center;
+        margin-bottom: 200px;
+        text-align: center;
+        align-items: center;
+    }
+    .biglogo {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .bl1cards {
+        flex-flow: column;
+    }
+    .container {
+        max-width: 620px;
+    }
+    .bl2content {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bl4h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 320px;
+    }
+    .hh1 {
+        font-size: 42px;
+    }
+    .bl3img {
+        width: 100%;
+    }
+    .form {
+        max-width: 350px;
+        height: 100%;
+    }
+    .input1, .input2 {
+        width: 250px;
+    }
+    .footic {
+        margin-bottom: 0px;
+    }
+    .footnav {
+        margin-top: 25px;
+    }
+}
