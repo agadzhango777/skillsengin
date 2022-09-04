@@ -8,6 +8,15 @@
     .bl2text {
         margin-bottom: 150px;
     }
+    .b1:hover, .b2:hover, .b3:hover {
+        box-shadow: none;
+        border-radius: none;
+        cursor: pointer;
+        transform: none; 
+    }
+    .bl1cards {
+        flex-flow: column;
+    }
 }
 
 @media (max-width: 1075px) {
@@ -25,9 +34,7 @@
 }
 
 @media (max-width: 900px) {
-    .bl1cards {
-        flex-flow: column;
-    }
+    
     .container {
         max-width: 620px;
     }
@@ -53,15 +60,44 @@
     }
     .form {
         max-width: 350px;
-        height: 100%;
+        
+        border-radius: 160.5px 0px;
     }
     .input1, .input2 {
         width: 250px;
+    }
+    .input1 {
+        margin-top: 100px;
     }
     .footic {
         margin-bottom: 0px;
     }
     .footnav {
         margin-top: 25px;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footitems {
+        margin-right: 0;
+    }
+    .formbt {
+        margin-bottom: 80px;
+    }
+    h2, .bl2h2, .bl3h2, .bl4h2 {
+        font-size: 32px;
+    }
+    .block1, .section2, .block3,.block4 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .title {
+        margin-top: 100px;
+    }
+    .title-button {
+        margin-bottom: 80px;
+
     }
 }
