@@ -1,3 +1,10 @@
+@font-face {
+	font-family: Impact;
+	src: url('fonts/Impact.ttf');
+    font-family: Tahoma;
+	src: url('fonts/tahoma.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
