@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/media.css">
+    
     <title>SkillBoost</title>
 </head>
 <body>   
@@ -26,6 +27,22 @@
      
  </ul>
 </nav>
+<div class="popup" id="popup">
+    <div class="popup_container">
+        <div class="popup_body" id="popup_body">
+            <form action="" class="form">
+                <input id='username 'type="text" class="input1" placeholder="Ваше имя">
+                <input id='phone' type="text" class="input2" placeholder="Номер телефона">
+                <div class="formtext">
+                    <img class='formicon' src="img/formicon.svg" alt="">
+                    <p class="ftext">Обращаясь к нам, вы получаете не только профессиональную консультацию, но и абсолютную конфиденциальность информации!</p>
+                </div>
+                <button type='submite'class="formbt">Отправить</button>
+            </form>
+            <img src="img/close.svg" alt="" class="popup_close" id="popup_close">
+        </div>
+    </div>
+</div> 
     <section class="header">
         <div class="logo">
         <img src="img/logo.svg" alt="" class="logo-icon">
@@ -35,15 +52,16 @@
                 <div class="title-content">
                     <h1 class="hh1">РАЗРАБАТЫВАЕМ ПРОДАЮЩИЕ САЙТЫ</h1>
                     <p>Современная адаптивная </br> верстка сайта и дизайн-макет</p>
-                    <link rel="stylesheet" href="#" class="title-button"><a href="" class="title-button-link">Заказать услугу</a>    
+                    
+                    <div class="title-button"><a href="#" id='open_popup'class="title-button-link">Заказать услугу</a></div> 
+                    
                 </div>
                 <div class="title-logo">
                     <img src="img/biglogo.svg" alt="" class="biglogo">
                 </div>
             </div>   
         </div>
-    <div class="whitebg"></div>
-        <video autoplay muted loop preload='auto'src="img/bg.mp4" class="vidbg"></video>
+        
     </section>
     <!--Конец главного экрана  -->
     <section class="block1" id="услуги">
@@ -55,10 +73,10 @@
                     <img src="img/link1.png" alt="" class="bl1img">
                     <h3>Сайт под ключ</h3>
                     <p>Вы экономите время на наполнение информацией о компании, товарах или услугах, не ломаете голову над дизайном и не общаетесь с разными специалистами. Все это мы берем на себя. А вы получаете готовый сайт.</p>
-                    <div class="bl1but">
+                    <a href="pod_klyuch.html" class="bl1links"><div class="bl1but">
                         <p class="buttext">Подробнее</p>
                         <img src="img/butic.svg" alt="" class="butic">
-                    </div>
+                    </div></a>
                 </div>
                 <div class="b2">
                     <img src="img/link3.png" alt="" class="bl1img">
@@ -66,20 +84,20 @@
                     <p>Разработаем удобный дизайн вашего будущего сайта.
                         Грамотная концепция формирует первое впечатление клиента. Легкое перемещение, приятный для восприятия визуал. Понятная структура, которая помогает решить задачи клиента.
                         </p>
-                        <div class="bl1but">
+                        <a href="design.html" class="bl1links"><div class="bl1but">
                             <p class="buttext">Подробнее</p>
                             <img src="img/butic.svg" alt="" class="butic">
-                        </div>
+                        </div></a>
                 </div>
                 <div class="b3">
                     <img src="img/link2.png" alt="" class="bl1img">
                     <h3>Вёрстка макета</h3>
                     <p>Представьте, что у вас уже есть готовый дизайн-макет сайта, и вы ищете надежный способ “оживить” его и перенести в браузер.
                         Мы сделаем современную верстку с разными эффектами и удобной навигацией.</p>
-                        <div class="bl1but">
+                        <a href="verstka.html" class="bl1links"><div class="bl1but">
                             <p class="buttext">Подробнее</p>
                             <img src="img/butic.svg" alt="" class="butic">
-                        </div>
+                        </div></a>
                 </div>
                 
             </div>
@@ -144,14 +162,14 @@
                 <h2 class="bl4h2">ГОТОВЫ ОБСУДИТЬ ПРОЕКТ?</h2>
                 <p class="bl4text">Заполните форму обратной связи,</br> и мы вам перезвоним!</p>
 
-                <form action="" class="form">
-                    <input id='username 'type="text" class="input1" placeholder="Ваше имя">
-                    <input id='phone' type="text" class="input2" placeholder="Номер телефона">
+                <form action="#" class="form">
+                    <input id='username' name='client_name' type="text" class="input1" placeholder="Ваше имя">
+                    <input id='phone' name='client_phone'type="text" class="input2" placeholder="Номер телефона">
                     <div class="formtext">
                         <img class='formicon' src="img/formicon.svg" alt="">
                         <p class="ftext">Обращаясь к нам, вы получаете не только профессиональную консультацию, но и абсолютную конфиденциальность информации!</p>
                     </div>
-                    <button type='submite'class="formbt">Отправить</button>
+                    <button type='submit'class="formbt">Отправить</button>
                 </form>
             </div>
         </div>
@@ -172,5 +190,6 @@
             <p class="linetext">© 2022 «skillsengin». Все права защищены.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

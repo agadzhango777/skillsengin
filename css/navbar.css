@@ -19,7 +19,7 @@
     /* определяем цвет фона панели */
     background: linear-gradient(90deg, #3081F7 0%, #2A439F 73.29%);
     /* поверх других элементов */
-    z-index: 2000;
+    z-index: 40;
 }
  
 /**
@@ -130,26 +130,7 @@
     content: '\2715';
 }
  
-/**
- * профиксим баг в Android <= 4.1.2
- * см: http://timpietrusky.com/advanced-checkbox-hack
- */
- 
-body {
-    -webkit-animation: bugfix infinite 1s;
-}
- 
-@-webkit-keyframes bugfix {
-    to {
-      padding: 0;
-    }
-}
- 
-/**
- * позаботьтимся о средних и маленьких экранах
- * мобильных устройств
- */
- 
+
 @media screen and (min-width: 320px) {
     html,
     body {
